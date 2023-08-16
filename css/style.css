@@ -177,6 +177,9 @@ a{
     font-size: 17px;
     border-radius: 5px;
 }
+.about-me .my-skills{
+    margin-top: 50px;
+}
 .about-me .my-skills .main-title{
     text-align: center;
 }
