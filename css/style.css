@@ -20,6 +20,9 @@ a{
 .show{
     display: flex !important;
 }
+.theme-red-color{
+    color: #c70039;
+}
 .header{
     position: absolute;
     top: 0;
@@ -142,4 +145,44 @@ a{
 }
 .about-me{
     width: 100%;
+    color: #fff;
+    padding:0px 10%;
+}
+.about-me .title{
+   margin-top: 80px;
+}
+.about-me .title .main-title{
+   font-size: 40px;
+}
+.about-me .title .sub-title{
+    font-size: 18px;
+}
+.about-me .title .sub-title .me{
+    color: #c70039;
+}
+.about-me .descriptions{
+    margin-top: 50px;
+}
+.about-me .descriptions .details{
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 18px;
+}
+.about-me .descriptions .download-cv-button{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: whitesmoke;
+    background: #c70039;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.about-me .my-skills .main-title{
+    text-align: center;
+}
+.about-me .my-skills .skills-container{
+    margin-top: 25px;
+}
+.about-me .my-skills .skills-container .item{
+    padding:5px 10px;
 }
