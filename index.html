@@ -14,37 +14,30 @@
 
 <body>
     <header class="header"> 
-         <div class="row flex-row-reverse">
-            <div class="col-6 d-flex flex-row flex-row-reverse">
-               <span onclick="showMenu()" class="menu-icon">
-                  <i class="bi bi-list"></i>
-               </span>
+         <div class="menu d-flex flex-column align-items-center justify-content-center">
+            <div class="menu-header d-flex flex-column align-items-center justify-content-center">
+               <i open-mode onclick="toggleMenu()" class="menu-icon bi bi-list"></i>
             </div>
-            <div class="col-6 d-flex align-items-center">
-               <span class="logo" >
-                  0 o 1
-               </span>
+            <div class="menu-content  flex-column align-items-center justify-content-start">
+               <a onclick="showSection('home')">
+                 <img src="images/icons/home.png" alt="">
+               </a>
+               <a onclick="showSection('about-me')">
+                 <img src="images/icons/about-me.png" alt="">
+               </a>
+               <a>
+                 <img src="images/icons/contact-us.png" alt="">
+               </a>
+               <a>
+                 <img src="images/icons/portfolio.png" alt="">
+               </a>
             </div>
-         </div>
-    </header>
-     <div class="menu  flex-column">
-        <div class="menu-header d-flex flex-row-reverse align-items-center justify-content-between">
-           <span onclick="hideMenu()" class="menu-close-icon">
-             <i class="bi bi-x"></i>
-           </span>
-           <span class="logo" >
+          </div>
+         <span class="logo" >
             0 o 1
-           </span>
-        </div>
-        <div class="items-container d-flex flex-column align-items-center justify-content-center">
-            <a onclick="goTo('home')" class="item">HOME</a>
-            <a onclick="goTo('about-me')" class="item" >ABOUT</a>
-            <a class="item" >BLOG</a>
-            <a class="item" >PORTFOLIO</a>
-            <a class="item" >CONTACT</a>
-        </div>
-     </div>
-     <section class="section home d-flex flex-column align-items-center justify-content-center">
+         </span>
+    </header>
+     <section class="section show home d-flex flex-column align-items-center justify-content-center">
         <div class="informations d-flex flex-row-reverse align-items-center justify-content-between">
            <div class="fast-contact d-flex flex-column">
               <a href="tel:+989221910373" class="item d-flex align-items-center justify-content-center">
@@ -82,7 +75,7 @@
            </div>
         </div>
      </section>
-      <section class="section row about-me" >
+      <section class="section hide row about-me" >
          <div class="title col-12 d-flex flex-column align-items-center justify-content-center">
             <h3 class="main-title">
                <span>About </span>
