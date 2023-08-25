@@ -33,14 +33,14 @@ a{
     color: #fff;
     font-size: 20px;
     margin-left: 40px;
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 5px;
 }
 .menu{
     width: 40px;
     border-radius: 2em;
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 40px;
 }
@@ -59,7 +59,15 @@ a{
     display: none;
 }
 .menu .menu-content a{
-    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .menu-content a:hover{
+    opacity: 1;
 }
 .menu .menu-content a img{
     width: 24px;
@@ -161,3 +169,6 @@ a{
 .about-me .my-skills .skills-container .item{
     padding:5px 10px;
 }
+
+
+

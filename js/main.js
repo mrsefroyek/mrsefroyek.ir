@@ -1,4 +1,6 @@
-
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({'placement': 'left'})   
+});
 function toggleMenu(){
     let menuIcon=document.querySelector(".menu-icon");
     let menuContent=document.querySelector(".menu-content");
