@@ -5,7 +5,7 @@
 }
 body{
     /* font-family: IRANSans; */
-    background-color: #020202;
+    background-color: #000;
 }
 .row {
     --bs-gutter-x:0;
@@ -169,6 +169,57 @@ a{
 .about-me .my-skills .skills-container .item{
     padding:5px 10px;
 }
-
+.portfolio{
+    width: 100%;
+    color: #fff;
+    padding:0px 10%;
+}
+.portfolio .title{
+    margin-top: 80px;
+}
+.portfolio .title .main-title {
+    font-size: 40px;
+}
+.portfolio .title .sub-title {
+    font-size: 18px;
+}
+.portfolio .item{
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+.portfolio .item .image-container{
+   width: 375px;
+}
+.portfolio .item .image-container img{
+   width:100%;
+}
+.portfolio .item .descriptions{
+    width: 440px;
+    background-color: #101010;
+    padding: 30px;
+    position: relative;
+    left: -50px;
+    top: 30px;
+}
+.portfolio .item .descriptions h2{
+    font-size: 35px;
+}
+.portfolio .item .descriptions p{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 18px;
+}
+.portfolio .item .descriptions .button{
+    color: #c70039;
+    transition: all .4s ease;
+    padding: 10px 30px;
+    border: 1.5px solid #c70039;
+    margin-top: 15px;
+    display: inline-block;
+}
+.portfolio .item .descriptions .button:hover{
+    background-color: #c70039;;
+    color: #fff;
+}
 
 
