@@ -5,10 +5,19 @@
 }
 body{
     /* font-family: IRANSans; */
+    display: flex !important;
+    flex-direction: column;
     background-color: #000;
+    width: 100%;
+    height: 100vh;
 }
 .row {
     --bs-gutter-x:0;
+}
+.section{
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow-y: auto;
 }
 a{
     text-decoration: none;
@@ -23,13 +32,13 @@ a{
 .theme-red-color{
     color: #c70039;
 }
-.header{
+/* .header{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-}
-.header .logo{
+} */
+.logo{
     color: #fff;
     font-size: 20px;
     margin-left: 40px;
@@ -74,7 +83,7 @@ a{
 }
 .home{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .home .informations .fast-contact .item{
@@ -188,7 +197,7 @@ a{
     padding-bottom: 50px;
 }
 .portfolio .item .image-container{
-   width: 375px;
+   width: 410px;
 }
 .portfolio .item .image-container img{
    width:100%;
