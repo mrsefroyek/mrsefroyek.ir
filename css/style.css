@@ -259,7 +259,7 @@ a{
         height: 100vh;
     }
     .home .informations .fast-contact{
-        position: fixed;
+        position: absolute;
         bottom: 65px;
         flex-direction: row;
     }
@@ -279,8 +279,9 @@ a{
         font-size: 18px;
     }
     .home .informations .social-media {
-        margin-bottom: 20px;
         flex-direction: row;
+        position: absolute;
+        bottom: 20px;
     }
 }
 @media only screen and (max-width:360px){
