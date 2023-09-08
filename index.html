@@ -14,29 +14,31 @@
 </head>
 
 <body>
-   <div class="menu d-flex flex-column align-items-center justify-content-center">
-      <div class="menu-header d-flex flex-column align-items-center justify-content-center">
-         <i open-mode onclick="toggleMenu()" class="menu-icon bi bi-list"></i>
-      </div>
-      <div class="menu-content  flex-column align-items-center justify-content-start">
-         <a data-toggle="tooltip" title="HOME" onclick="showSection('home')">
-           <img src="images/icons/home.png" alt="">
-         </a>
-         <a data-toggle="tooltip" title="ABOUT ME" onclick="showSection('about-me')">
-           <img src="images/icons/about-me.png" alt="">
-         </a>
-         <!-- <a data-toggle="tooltip" title="CONTACT US">
-           <img src="images/icons/contact-us.png" alt="">
-         </a> -->
-         <a data-toggle="tooltip" onclick="showSection('portfolio')" title="PORTFOLIO">
-           <img src="images/icons/portfolio.png" alt="">
-         </a>
-      </div>
-    </div>
-   <span class="logo" >
-      0 o 1
-   </span>
-     <section class="section show home d-flex flex-column align-items-center justify-content-center">
+   <div class="header d-flex  align-items-center justify-content-between">
+      <div class="menu d-flex flex-column align-items-center justify-content-center">
+         <div class="menu-header d-flex flex-column align-items-center justify-content-center">
+            <i open-mode onclick="toggleMenu()" class="menu-icon bi bi-list"></i>
+         </div>
+         <div class="menu-content  flex-column align-items-center justify-content-start">
+            <a data-toggle="tooltip" title="HOME" onclick="showSection('home')">
+              <img src="images/icons/home.png" alt="">
+            </a>
+            <a data-toggle="tooltip" title="ABOUT ME" onclick="showSection('about-me')">
+              <img src="images/icons/about-me.png" alt="">
+            </a>
+            <!-- <a data-toggle="tooltip" title="CONTACT US">
+              <img src="images/icons/contact-us.png" alt="">
+            </a> -->
+            <a data-toggle="tooltip" onclick="showSection('portfolio')" title="PORTFOLIO">
+              <img src="images/icons/portfolio.png" alt="">
+            </a>
+         </div>
+       </div>
+      <span class="logo" >
+         0 o 1
+      </span>
+   </div>
+     <section class="section hide home d-flex flex-column align-items-center justify-content-center">
         <div class="informations d-flex align-items-center justify-content-between">
            <div class="fast-contact d-flex">
               <a href="tel:+989221910373" class="item d-flex align-items-center justify-content-center">
@@ -77,19 +79,19 @@
            </div>
         </div>
      </section>
-      <section class="section hide row about-me" >
+      <section class="section show row about-me" >
          <div class="title col-12 d-flex flex-column align-items-center justify-content-center">
             <h3 class="main-title">
                <span>About </span>
                <span class="theme-red-color">Me</span>
             </h3>
             <p class="sub-title">
-               <span>Get to Know </span>
-               <span class="me">me</span>
+               <span>Get To Know </span>
+               <span class="me">Me</span>
             </p>
          </div>
          <div class="descriptions row col-12">
-             <div class="col-6">
+             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 details">
                <h2>
                   <span>
                   I'm creative 
@@ -101,14 +103,18 @@
                      based in New York , USA 
                   </span>
                </h2>
-               <p class="details" >
+               <p>
                   With 20 years of experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step while working.
                </p>
                <a class="download-cv-button">
                   Download CV
                </a>
              </div>
-             <div class="col-6 image-container">2</div>
+             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-start justify-content-end">
+               <div class="image-container">
+                  <img src="images/others/test.png" alt=""/>
+               </div>
+             </div>
          </div>
          <div class="my-skills col-12 row">
             <h2 class="col-12 main-title">
