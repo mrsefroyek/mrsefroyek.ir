@@ -222,7 +222,10 @@ a{
     padding-bottom: 50px;
 }
 .portfolio .item .image-container{
-   width: 410px;
+   width: 500px;
+   height: 400px;
+   background-image: url("../images/others/test.png");
+   background-size: contain;
 }
 .portfolio .item .image-container img{
    width:100%;
@@ -241,7 +244,7 @@ a{
 .portfolio .item .descriptions p{
     margin-top: 30px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
 }
 .portfolio .item .descriptions .button{
     color: #c70039;
@@ -256,10 +259,30 @@ a{
     color: #fff;
 }
 
+@media only screen and (max-width:1200px){
+    .portfolio .item .image-container{
+        width: 410px;
+     }
+     .portfolio .item .descriptions {
+        width: 410px;
+    }
+}
 @media only screen and (max-width:1024px){
     .about-me .descriptions .image-container {
         padding: 10px 0px 10px 50px;
     }
+}
+@media only screen and (max-width:992px){
+    .portfolio .item{
+        padding-bottom: unset;
+    }
+    .portfolio .item .image-container {
+       display: none;
+    }
+    .portfolio .item .descriptions{
+        position:unset;
+    }
+    
 }
 @media only screen and (max-width:768px){
     .home .informations .title .main-title {
@@ -310,6 +333,23 @@ a{
     .about-me {
         padding: 0px 16px;
     }
+    .about-me .title .main-title {
+        font-size: 32px;
+    }
+    .portfolio {
+        padding: 0px 16px;
+    }
+    .portfolio .title .main-title {
+        font-size: 34px;
+    }
+    .portfolio .item .descriptions {
+        width: 100%;
+        padding: 10px;
+    }
+    .portfolio .item .descriptions h2 {
+        font-size: 34px;
+    }
+    
 }
 @media only screen and (max-width:360px){
     .home .informations .title .main-title {
@@ -317,5 +357,11 @@ a{
     }
     .home .informations .title .descriptions {
         font-size: 17px;
+    }
+    .portfolio .title .main-title {
+        font-size: 32px;
+    }
+    .portfolio .item .descriptions h2 {
+        font-size: 32px;
     }
 }
