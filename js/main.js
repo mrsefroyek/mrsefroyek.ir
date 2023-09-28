@@ -25,5 +25,5 @@ function showSection(sectionName){
     }
     let item=document.querySelector(`.${sectionName}`);
     item.classList.add("show");
-    // this.toggleMenu();
+    this.toggleMenu();
 }
