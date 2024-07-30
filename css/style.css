@@ -185,6 +185,7 @@ a{
 }
 .about-me .my-skills{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .about-me .my-skills .main-title{
     text-align: center;
@@ -221,6 +222,9 @@ a{
 .portfolio .item{
     margin-top: 40px;
     padding-bottom: 50px;
+}
+.portfolio .item:last-child{
+    margin-bottom: 50px;
 }
 .portfolio .item .image-container{
    width: 500px;
@@ -267,6 +271,7 @@ a{
      .portfolio .item .descriptions {
         width: 410px;
     }
+    
 }
 @media only screen and (max-width:1024px){
     .about-me .descriptions .image-container {
@@ -348,7 +353,7 @@ a{
         padding: 10px;
     }
     .portfolio .item .descriptions h2 {
-        font-size: 34px;
+        font-size: 30px;
     }
     
 }
